@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Quest</title>
-<meta name="description" content="Quest is coming soon.">
+<meta name="description" content="Request anything. See it happen. Quest is coming soon.">
 <meta name="theme-color" content="#224574">
 <link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="hero.webp" as="image" type="image/webp">
@@ -21,14 +21,18 @@ main{position:relative;z-index:1;text-align:center}
 h1{margin:0;display:inline-flex;align-items:center;gap:.36em;font:500 clamp(48px,12vw,88px)/1 'Newsreader',Georgia,'Times New Roman',serif;letter-spacing:-.01em;text-shadow:0 2px 24px rgba(10,50,120,.3)}
 .mark{flex:none;width:.8em;height:.8em;border-radius:50%;background:#fff;position:relative;overflow:hidden}
 .mark::after{content:"";position:absolute;left:-18%;right:-18%;bottom:-41%;height:73%;border-radius:50%;background:#4fae55}
-p{margin:22px 0 0;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#e6f1fc}
-@media (max-height:560px){body{padding-top:36px}h1{font-size:56px}p{margin-top:12px}}
+p{margin:0}
+.tag{margin-top:18px;font:400 clamp(22px,4.4vw,32px)/1.2 'Newsreader',Georgia,'Times New Roman',serif;text-shadow:0 2px 24px rgba(10,50,120,.3)}
+.tag span{display:inline-block}
+.soon{margin-top:22px;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#e6f1fc}
+@media (max-height:560px){body{padding-top:36px}h1{font-size:56px}.tag{margin-top:10px;font-size:22px}.soon{margin-top:12px}}
 </style>
 </head>
 <body>
 <main>
 <h1><span class="mark" aria-hidden="true"></span>Quest</h1>
-<p>Coming soon</p>
+<p class="tag"><span>Request anything.</span> <span>See it happen.</span></p>
+<p class="soon">Coming soon</p>
 </main>
 </body>
 </html>
